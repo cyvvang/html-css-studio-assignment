@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:ital,opsz,wght@0,9..40,500;1,9..40,500&display=swap');
+
+#logoBar {
+  width: 30vw;
+  height: 100vh;
+}
+
+#logoBarContent {
+  width: 100%;
+  position: fixed;
+}
+ 
+#siteLogo {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  padding: 1rem;
+  gap: 1.5rem;
+  background: lightyellow;
+  color: #5d3011;
+}
+
+h1 {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+span {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h2 { 
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h3 { 
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p { 
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+#staffGallery {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* grid-template: repeat(6, 1fr) */
+  gap: 1rem;
+}
+
+.staffCard {
+  background: palegoldenrod;
+  padding: 1rem 1.75rem;
+  border-radius: 1rem;
+}
+
+.galleryImage{
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logoBar {
+    width: 100vw;
+    height: 64vh;
+  }
+
+  #staffGallery{
+    width: 100%;
+  }
+
+  .staffCard {
+    padding: 0.25rem 1.25rem;
+  }
+}
+
